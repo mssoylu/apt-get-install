@@ -4,9 +4,16 @@ Useful and basic apt package list
 sudo su
 apt-get update & upgrade
 
+# Basic tools
+apt-get install mutt
+apt-get install calcurse
+apt-get install lynx elinks
+
+
+
 # Server
 apt-get install nginx 
-apt-get install php5-fpm php5-mcrypt php5-cli php5-mysql
+apt-get install php5-fpm php5-mcrypt php5-cli php5-mysql 
 apt-get install mysql
 
 # Transfer
@@ -39,6 +46,7 @@ apt-get install qalc
 
 # Text edit
 apt-get install vim vifm ranger
+apt-get install sc
 
 # Code Tools
 apt-get install cloc

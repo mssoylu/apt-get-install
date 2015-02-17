@@ -1,3 +1,13 @@
+# sourcelists For debian
+
+## MySQL
+deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          
+deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6 
+
+## php 5.6.5
+deb http://packages.dotdeb.org wheezy-php55 all                                 
+deb-src http://packages.dotdeb.org wheezy-php55 all                             
+                                                                                
 # apt-get-install
 Useful and basic apt package list
 

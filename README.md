@@ -1,4 +1,4 @@
-# sourcelists For debian
+# Sourcelists for Debian Wheezy
 
 ## MySQL
 deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          

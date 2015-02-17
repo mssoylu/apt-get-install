@@ -28,7 +28,7 @@ apt-get install lynx elinks
 # Server
 apt-get install nginx 
 apt-get install php5-fpm php5-mcrypt php5-cli php5-mysql 
-apt-get install mysql
+apt-get install mysql-server
 
 # Transfer
 apt-get install curl

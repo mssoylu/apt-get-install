@@ -34,7 +34,7 @@ apt-get install mysql-server
 apt-get install curl
 apt-get install wget
 apt-get install rsync
-apt-get install git
+apt-get install git tig
 apt-get install lftp
 
 # Hardware
@@ -63,8 +63,7 @@ apt-get install vim vifm ranger
 apt-get install sc
 
 # Code Tools
-apt-get install cloc
-apt-get install tig
+apt-get install cloc 
 
 # Funny
 apt-get install sl cmatrix cowsay

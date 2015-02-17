@@ -7,6 +7,10 @@ deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6
 ## PHP 5.6.5
 deb http://packages.dotdeb.org wheezy-php55 all                                 
 deb-src http://packages.dotdeb.org wheezy-php55 all                             
+                                     
+## Flash player 
+deb ftp://ftp.debian.org/debian stable main contrib non-free #sudo apt-get install flashplugin-nonfree
+
                                                                                 
 # apt-get-install
 Useful and basic apt package list

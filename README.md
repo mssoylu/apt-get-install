@@ -72,3 +72,8 @@ apt-get install sl cmatrix cowsay
 # Special Links
 http://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/
  
+# Lib6c for debian wheezy
+echo "deb http://ftp.debian.org/debian sid main" >> /etc/apt/sources.list
+apt-get update
+apt-get -t sid install libc6 libc6-dev libc6-dbg
+Please remember to hash out sid main from your sources list. /etc/apt/sources.list

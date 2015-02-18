@@ -52,43 +52,52 @@ Useful and basic apt package list
    apt-get install mysql-server
 ```
 # Transfer
-apt-get install curl
-apt-get install wget
-apt-get install rsync
-apt-get install git tig git-core
-apt-get install lftp
-
+```bash
+   apt-get install curl
+   apt-get install wget
+   apt-get install rsync
+   apt-get install git tig git-core
+   apt-get install lftp
+```
 # Hardware
-apt-get install powertop
-
+```bash
+   apt-get install powertop
+```
 # Test
-apt-get install seige
-
+```bash
+   apt-get install seige
+```
 # Monitoring
-apt-get install dstat
-apt-get install htop
-apt-get install iftop
-apt-get install speedometer
-
+```bash
+   apt-get install dstat
+   apt-get install htop
+   apt-get install iftop
+   apt-get install speedometer
+```
 # Log
-apt-get install multitail
- 
+```bash
+   apt-get install multitail
+```
 # Usibility
-apt-get install tmux
-apt-get install tree
-apt-get install mc
-apt-get install qalc
-
+```bash
+   apt-get install tmux
+   apt-get install tree
+   apt-get install mc
+   apt-get install qalc
+```
 # Text edit
+```bash
 apt-get install vim vifm ranger
 apt-get install sc
-
+```
 # Code Tools
-apt-get install cloc 
-
+```bash
+   apt-get install cloc 
+```
 # Funny
-apt-get install sl cmatrix cowsay
-
+```bash
+   apt-get install sl cmatrix cowsay
+```
 # Special Links
 http://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/
  

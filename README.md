@@ -1,25 +1,47 @@
 # Sourcelists for Debian Wheezy
 
+## Tools
+
+                                     apt-get install curl wget rsync git tig git-core tmux vim
+
 ## MySQL 5.6.23
-deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          
-deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6 
+
+                                     deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          
+                                     deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6 
 
 ## PHP 5.6.5
-deb http://packages.dotdeb.org wheezy-php55 all                                 
-deb-src http://packages.dotdeb.org wheezy-php55 all                             
+
+                                     deb http://packages.dotdeb.org wheezy-php55 all                                 
+                                     deb-src http://packages.dotdeb.org wheezy-php55 all                             
                                      
 ## Flash player 
-deb ftp://ftp.debian.org/debian stable main contrib non-free #sudo apt-get install flashplugin-nonfree
+                                     
+                                     deb ftp://ftp.debian.org/debian stable main contrib non-free #sudo apt-get install flashplugin-nonfree
+
+## Nodejs
+                                     
+                                     sudo apt-get update
+                                     sudo apt-get upgrade
+                                     sudo apt-get install gcc cpp g++ automake1.9 autoconf libtool flex bison python-software-properties
+                                     
+                                     cd /usr/local/src
+                                     wget http://nodejs.org/dist/node-latest.tar.gz
+                                     tar zxvf node-latest.tar.gz
+                                     cd node-v0.1*
+                                     ./configure
+                                     make
+                                     sudo make install
 
                                                                                 
 # apt-get-install
 Useful and basic apt package list
 
-sudo su
-apt-get update & upgrade
+                                     sudo su
+                                     apt-get update & upgrade
 
 # Basic tools
-apt-get install mutt
+                                     
+                                     apt-get install mutt
 apt-get install calcurse
 apt-get install lynx elinks
 
@@ -34,7 +56,7 @@ apt-get install mysql-server
 apt-get install curl
 apt-get install wget
 apt-get install rsync
-apt-get install git tig
+apt-get install git tig git-core
 apt-get install lftp
 
 # Hardware

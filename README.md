@@ -1,9 +1,9 @@
 # Sourcelists for Debian Wheezy
 
 ## Tools
-
-                                     apt-get install curl wget rsync git tig git-core tmux vim
-
+```bash
+   apt-get install curl wget rsync git tig git-core tmux vim
+````
 ## MySQL 5.6.23
 
                                      deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          

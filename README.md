@@ -10,10 +10,16 @@
    deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          
    deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6 
 ```
-## PHP 5.6.5
+## PHP 
 ```bash
    deb http://packages.dotdeb.org wheezy-php55 all                                 
-   deb-src http://packages.dotdeb.org wheezy-php55 all                             
+   deb-src http://packages.dotdeb.org wheezy-php55 all
+   
+   curl -sS https://getcomposer.org/installer | php
+   mv composer.phar /usr/local/bin/composer
+   
+   sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
+   sudo chmod a+x /usr/local/bin/symfony # symfony new my_project_name
 ```
 ## Flash player 
 

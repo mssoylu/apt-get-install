@@ -7,26 +7,26 @@
 ````
 ## MySQL 5.6.23
 ```bash
-   deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          
-   deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6 
-   
    apt-get install mysql-server mysql-workbench phpmyadmin
 ```
 ## PHP 
 ```bash
-   deb http://packages.dotdeb.org wheezy-php55 all                                 
-   deb-src http://packages.dotdeb.org wheezy-php55 all
+   # PHP
+   apt-get install apache2 
+   apt-get install php5-fpm php5-mcrypt php5-cli php5-mysql php5-curl
    
+   # Composer
    curl -sS https://getcomposer.org/installer | php
    mv composer.phar /usr/local/bin/composer
    
+   # Symfony
    sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
    sudo chmod a+x /usr/local/bin/symfony # symfony new my_project_name
 ```
 ## Flash player 
 
 ```bash
-   deb ftp://ftp.debian.org/debian stable main contrib non-free #sudo apt-get install flashplugin-nonfree
+   sudo apt-get install flashplugin-nonfree
 ```
 ## Nodejs
 ```bash
@@ -43,65 +43,48 @@
    sudo make install
 ```
 # apt-get-install
-Useful and basic apt package list
-```bash
-   sudo su
-   apt-get update & upgrade
-```
+
 # Basic tools
 ```bash
-   apt-get install mutt
-   apt-get install calcurse
-   apt-get install lynx elinks
-```
-# Server
-```bash   
-   apt-get install nginx 
-   apt-get install php5-fpm php5-mcrypt php5-cli php5-mysql 
-   apt-get install mysql-server
+   apt-get install mutt # email client
+   apt-get install calcurse # calendar and scheduling application
+   apt-get install lynx elinks # browser for cli 
 ```
 # Transfer
 ```bash
-   apt-get install curl
-   apt-get install wget
-   apt-get install rsync
-   apt-get install git tig git-core
-   apt-get install lftp
+   apt-get install curl wget rsync git tig git-core lftp
 ```
 # Hardware
 ```bash
-   apt-get install powertop
+   apt-get install powertop 
 ```
 # Test
 ```bash
-   apt-get install seige
+   apt-get install seige apache2-utils # stres test
 ```
 # Monitoring
 ```bash
-   apt-get install dstat
+   apt-get install dstat # vmstat, iostat, ifstat, netstat information > http://dag.wiee.rs/home-made/dstat/
    apt-get install htop
-   apt-get install iftop
-   apt-get install speedometer
+   apt-get install iftop 
+   apt-get install speedometer # speedtest graphic on cli
 ```
 # Log
 ```bash
-   apt-get install multitail
+   apt-get install multitail # watch mutlilog one sreen
 ```
 # Usibility
 ```bash
-   apt-get install tmux
-   apt-get install tree
-   apt-get install mc
-   apt-get install qalc
+   apt-get install tree mc qalc # file tree, file commander, calc connected net
 ```
 # Text edit
 ```bash
-   apt-get install vim vifm ranger
-   apt-get install sc
+   apt-get install vim vifm ranger # file managers for vim
+   apt-get install sc # excel style on cli
 ```
 # Code Tools
 ```bash
-   apt-get install cloc 
+   apt-get install cloc # lines of code
 ```
 # Funny
 ```bash

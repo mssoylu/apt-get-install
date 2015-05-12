@@ -9,6 +9,8 @@
 ```bash
    deb http://repo.mysql.com/apt/debian/ wheezy mysql-5.6                          
    deb-src http://repo.mysql.com/apt/debian/ wheezy mysql-5.6 
+   
+   apt-get install mysql-server workbench
 ```
 ## PHP 
 ```bash

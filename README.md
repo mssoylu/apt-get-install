@@ -2,6 +2,7 @@
 
 ## Tools
 ```bash
+   apt-get install python3-software-properties
    apt-get install curl wget rsync git tig git-core tmux vim
 ````
 ## MySQL 5.6.23

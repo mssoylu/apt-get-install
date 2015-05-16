@@ -1,14 +1,8 @@
-Debian 7 "Wheezy"
-
-Add a "non-free" component to /etc/apt/sources.list, for example:
-
-# Debian 7 "Wheezy"
-
 deb http://http.debian.net/debian/ wheezy main contrib non-free
-Update the list of available packages and install the firmware-iwlwifi package:
-
 # apt-get update && apt-get install firmware-iwlwifi
-
-As the iwlwifi module is automatically loaded for supported devices, reinsert this module to access installed firmware:
-
 # modprobe -r iwlwifi ; modprobe iwlwifi
+# apt-get install wicd
+
+open prefrenses and add wireless input wlan0
+
+refresh list.

@@ -12,7 +12,7 @@ php5 php5-fpm php5-mcrypt php5-cli php5-mysql php5-curl
 mysql-server mysql-workbench phpmyadmin
 redis-server
 flashplugin-nonfree
-
+pidgin
 )
  
 for app in "${apps[@]}"

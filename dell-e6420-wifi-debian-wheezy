@@ -1,8 +1,0 @@
-deb http://http.debian.net/debian/ wheezy main contrib non-free
-# apt-get update && apt-get install firmware-iwlwifi
-# modprobe -r iwlwifi ; modprobe iwlwifi
-# apt-get install wicd
-
-open prefrenses and add wireless input wlan0
-
-refresh list.

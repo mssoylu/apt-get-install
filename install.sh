@@ -19,3 +19,13 @@ for app in "${apps[@]}"
 do
     apt-get install $app -y
 done
+
+commands=(
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer 
+)
+
+for commandRow in "${commands[@]}"
+do
+    $commandRow
+done

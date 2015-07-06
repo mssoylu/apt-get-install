@@ -1,5 +1,4 @@
 apps=(
-
 tmux
 geany
 vim
@@ -21,9 +20,10 @@ do
 done
 
 commands=(
- 
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer 
+a2enmod rewrite
+service apache2 restart
 )
 
 for commandRow in "${commands[@]}"

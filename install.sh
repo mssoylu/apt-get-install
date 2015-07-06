@@ -26,6 +26,9 @@ curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
 chmod a+x /usr/local/bin/symfony
 a2enmod rewrite
 service apache2 restart
+apt-add-repository ppa:webupd8team/java
+apt-get update
+apt-get install oracle-java8-installer
 )
 
 for commandRow in "${commands[@]}"

@@ -22,6 +22,8 @@ done
 commands=(
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer 
+curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
+chmod a+x /usr/local/bin/symfony
 a2enmod rewrite
 service apache2 restart
 )

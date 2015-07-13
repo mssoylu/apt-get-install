@@ -12,6 +12,7 @@ mysql-server mysql-workbench phpmyadmin
 redis-server
 flashplugin-nonfree
 pidgin
+nodejs-legacy
 npm
 )
  

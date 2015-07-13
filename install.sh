@@ -12,6 +12,7 @@ mysql-server mysql-workbench phpmyadmin
 redis-server
 flashplugin-nonfree
 pidgin
+npm
 )
  
 for app in "${apps[@]}"
@@ -29,6 +30,8 @@ service apache2 restart
 apt-add-repository ppa:webupd8team/java
 apt-get update
 apt-get install oracle-java8-installer
+npm install -g bower
+npm install --global gulp
 )
 
 for commandRow in "${commands[@]}"

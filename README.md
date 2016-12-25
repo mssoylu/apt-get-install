@@ -1,4 +1,4 @@
-# Sourcelists for Debian Wheezy
+# Sourcelists fo Ubuntu
 
 ## Tools
 ```bash
@@ -7,17 +7,19 @@
 ````
 ## Databases
 ```bash
-   apt-get install mysql-server mysql-workbench phpmyadmin redis-server
+   apt-get install mysql-server mysql-workbench redis-server
 ```
 ## PHP 
 ```bash
    # PHP
-   apt-get install apache2 
-   apt-get install php5-fpm php5-mcrypt php5-cli php5-mysql php5-curl
+   sudo apt-get install -y language-pack-en-base
+   sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
+   sudo apt-get install apache2 
+   sudo apt-get install php7.1-fpm php7.1-mcrypt php7.1-cli php7.1-mysql php7.1-curl phpmyadmin
    
    # Composer
-   curl -sS https://getcomposer.org/installer | php
-   mv composer.phar /usr/local/bin/composer
+   sudo curl -sS https://getcomposer.org/installer | php
+   sudo mv composer.phar /usr/local/bin/composer
    
    # Symfony
    sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony

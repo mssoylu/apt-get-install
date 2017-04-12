@@ -7,7 +7,7 @@ wget rsync ssh lftp
 python3-software-properties
 tree
 apache2
-php5 php5-fpm php5-mcrypt php5-cli php5-mysql php5-curl
+php7.1 php7.1-fpm php7.1-mcrypt php7.1-cli php7.1-mysql php7.1-curl
 mysql-server mysql-workbench phpmyadmin
 redis-server
 flashplugin-nonfree

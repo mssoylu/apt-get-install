@@ -39,7 +39,7 @@
    cd /usr/local/src
    wget http://nodejs.org/dist/node-latest.tar.gz
    tar zxvf node-latest.tar.gz
-   cd node-v0.1*
+   cd node-........ // join node dir
    ./configure
    make
    sudo make install

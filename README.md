@@ -1,5 +1,9 @@
 # Sourcelists fo Ubuntu
 
+## ZSH 
+
+```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
+
 ## Tools
 ```bash
    apt-get install python3-software-properties

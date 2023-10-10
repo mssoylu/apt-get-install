@@ -1,4 +1,3 @@
-##########
 # APACHE & Certbot
 
 apt install apache2 
@@ -7,7 +6,6 @@ sudo snap install --classic certbot
 
 sudo certbot --apache
 
-##########
 # MYSQL
 
 apt install mysql-server
@@ -27,8 +25,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'My-N7w_A
 FLUSH privileges;
 
 QUIT
-
-################
+ 
 # PHP & version change
 
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
@@ -45,14 +42,14 @@ sudo update-alternatives --config php
 
 apt install phpmyadmin
 
-################
+ 
 # Alternative 
 
 sudo a2dismod php7.2
 sudo a2enmod php8.1
 sudo service apache2 restart
 
-################
+
 # Symfony 
 
 curl -sS https://getcomposer.org/installer | php
@@ -67,7 +64,7 @@ a2enmod rewrite
 
 service apache2 restart
 
-###############
+
 # Virtual Host Sample for Symfony5+
 
 ```

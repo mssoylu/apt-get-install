@@ -1,9 +1,11 @@
 # Ubuntu Install Base Tools
 
 ```sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"```
+
 ```sudo add-apt-repository ppa:ondrej/php```
 
 ```apt update```
+
 ```apt upgrade```
 
 ## ZSH 

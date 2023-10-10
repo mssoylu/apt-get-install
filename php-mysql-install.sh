@@ -76,14 +76,13 @@ service apache2 restart
 
     <FilesMatch \.php$>
         # when using PHP-FPM as a unix socket
-        SetHandler proxy:unix:/var/run/php/php7.4-fpm.sock|fcgi://dummy
-
+        # SetHandler proxy:unix:/var/run/php/php7.4-fpm.sock|fcgi://dummy
         # when PHP-FPM is configured to use TCP
         # SetHandler proxy:fcgi://127.0.0.1:9000
     </FilesMatch>
 
-    DocumentRoot /var/www/project/public
-    <Directory /var/www/project/public>
+    DocumentRoot /var/www/example.com/root/public
+    <Directory /var/www/example.com/root/public>
         AllowOverride None
         Require all granted
         FallbackResource /index.php
@@ -91,11 +90,11 @@ service apache2 restart
 
     # uncomment the following lines if you install assets as symlinks
     # or run into problems when compiling LESS/Sass/CoffeeScript assets
-    # <Directory /var/www/project>
+    # <Directory /var/www/example.com>
     #     Options FollowSymlinks
     # </Directory>
 
-    ErrorLog /var/log/apache2/project_error.log
-    CustomLog /var/log/apache2/project_access.log combined
+    ErrorLog /var/log/apache2/example_com_error.log
+    CustomLog /var/log/apache2/example_com_access.log combined
 </VirtualHost>
 ```

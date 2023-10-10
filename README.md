@@ -1,7 +1,7 @@
 # Ubuntu Install Base Tools
 
 ## ZSH 
-
+```apt install zsh```
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 
 ### ZSH prompt fix

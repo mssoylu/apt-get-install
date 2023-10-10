@@ -38,6 +38,8 @@ apt install php8.1 php8.1-fpm php8.1-mcrypt php8.1-cli php8.1-mysql php8.1-curl 
 
 sudo update-alternatives --config php
 
+apt install phpmyadmin
+
 ################
 # Alternative 
 

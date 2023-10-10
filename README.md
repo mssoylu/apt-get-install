@@ -4,6 +4,14 @@
 
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
 
+### ZSH prompt fix
+```vim ~/.zshrc```
+
+add this line 
+
+```PROMPT+=' %{$fg[cyan]%}%2~%{$reset_color%} $(git_prompt_info)'```
+```. ~/.zshrc```
+
 ## Tools
 ```bash
    apt-get install python3-software-properties

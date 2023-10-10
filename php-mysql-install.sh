@@ -1,3 +1,10 @@
+##########
+# APACHE
+apt install apache2 
+
+##########
+# MYSQL
+
 apt install mysql-server
 
 mysql_secure_installation
@@ -37,3 +44,18 @@ sudo update-alternatives --config php
 sudo a2dismod php7.2
 sudo a2enmod php8.1
 sudo service apache2 restart
+
+################
+# Symfony 
+
+curl -sS https://getcomposer.org/installer | php
+
+mv composer.phar /usr/local/bin/composer 
+
+curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
+
+chmod a+x /usr/local/bin/symfony
+
+a2enmod rewrite
+
+service apache2 restart

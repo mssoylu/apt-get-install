@@ -59,3 +59,43 @@ chmod a+x /usr/local/bin/symfony
 a2enmod rewrite
 
 service apache2 restart
+
+###############
+# Virtual Host Sample for Symfony5+
+
+```
+# /etc/apache2/conf.d/example.com.conf
+<VirtualHost *:80>
+    ServerName example.com
+    ServerAlias www.example.com
+
+    # Uncomment the following line to force Apache to pass the Authorization
+    # header to PHP: required for "basic_auth" under PHP-FPM and FastCGI
+    #
+    # SetEnvIfNoCase ^Authorization$ "(.+)" HTTP_AUTHORIZATION=$1
+
+    <FilesMatch \.php$>
+        # when using PHP-FPM as a unix socket
+        SetHandler proxy:unix:/var/run/php/php7.4-fpm.sock|fcgi://dummy
+
+        # when PHP-FPM is configured to use TCP
+        # SetHandler proxy:fcgi://127.0.0.1:9000
+    </FilesMatch>
+
+    DocumentRoot /var/www/project/public
+    <Directory /var/www/project/public>
+        AllowOverride None
+        Require all granted
+        FallbackResource /index.php
+    </Directory>
+
+    # uncomment the following lines if you install assets as symlinks
+    # or run into problems when compiling LESS/Sass/CoffeeScript assets
+    # <Directory /var/www/project>
+    #     Options FollowSymlinks
+    # </Directory>
+
+    ErrorLog /var/log/apache2/project_error.log
+    CustomLog /var/log/apache2/project_access.log combined
+</VirtualHost>
+```

@@ -19,9 +19,11 @@ QUIT
 ################
 # PHP & version change
 
-sudo add-apt-repository ppa:ondrej/php
-
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
 sudo apt update
+
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update 
 
 apt install php7.4 php7.4-fpm php7.4-mcrypt php7.4-cli php7.4-mysql php7.4-curl php7.4-xml php7.4-redis php7.4-mbstring
 

@@ -18,7 +18,11 @@ QUIT
 
 ################
 # PHP & version change
- 
+
+sudo add-apt-repository ppa:ondrej/php
+
+sudo apt update
+
 apt install php7.4 php7.4-fpm php7.4-mcrypt php7.4-cli php7.4-mysql php7.4-curl php7.4-xml php7.4-redis php7.4-mbstring
 
 apt install php8.1 php8.1-fpm php8.1-mcrypt php8.1-cli php8.1-mysql php8.1-curl php8.1-xml php8.1-redis php8.1-mbstring

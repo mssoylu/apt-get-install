@@ -10,6 +10,7 @@
 add this line 
 
 ```PROMPT+=' %{$fg[cyan]%}%2~%{$reset_color%} $(git_prompt_info)'```
+
 ```. ~/.zshrc```
 
 ## Tools

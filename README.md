@@ -8,6 +8,8 @@
 
 ```apt upgrade```
 
+```apt-get install language-pack-en language-pack-en-base manpages```
+
 ## ZSH 
 ```apt install zsh```
 

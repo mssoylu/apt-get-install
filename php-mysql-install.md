@@ -1,6 +1,9 @@
 ##########
-# APACHE
+# APACHE & Certbot
+
 apt install apache2 
+
+apt install certbot    
 
 ##########
 # MYSQL

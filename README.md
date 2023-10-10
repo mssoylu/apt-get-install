@@ -28,7 +28,7 @@ add this line
    sudo apt-get install -y language-pack-en-base
    sudo LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php
    sudo apt-get install apache2 
-   sudo apt-get install php7.1-fpm php7.1-mcrypt php7.1-cli php7.1-mysql php7.1-curl php7.1-zip phpmyadmin
+   sudo apt-get install php7.4-fpm php7.4-mcrypt php7.4-cli php7.4-mysql php7.4-curl php7.4-zip phpmyadmin
    
    # Composer
    sudo curl -sS https://getcomposer.org/installer | php
@@ -37,6 +37,11 @@ add this line
    # Symfony
    sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
    sudo chmod a+x /usr/local/bin/symfony # symfony new my_project_name
+
+   # Certbot
+   sudo apt install certbot
+   certbot --apache
+
 ```
 ## Flash player 
 

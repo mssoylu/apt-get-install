@@ -42,11 +42,20 @@ sudo update-alternatives --config php
 
 apt install phpmyadmin
 
+# NODEJS && NPM
+
+apt install nodejs npm
+
+npm install bower -g
+
+npm install yarn -g
  
 # Alternative 
 
 sudo a2dismod php7.2
+
 sudo a2enmod php8.1
+
 sudo service apache2 restart
 
 

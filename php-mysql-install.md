@@ -3,7 +3,9 @@
 
 apt install apache2 
 
-apt install certbot    
+sudo snap install --classic certbot
+
+sudo certbot --apache
 
 ##########
 # MYSQL

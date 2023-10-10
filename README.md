@@ -1,5 +1,8 @@
 # Ubuntu Install Base Tools
 
+```apt update```
+```apt upgrade```
+
 ## ZSH 
 ```apt install zsh```
 

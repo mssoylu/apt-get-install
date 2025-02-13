@@ -31,7 +31,7 @@ add this line
 ````
 ## Databases
 ```bash
-   apt-get install mysql-server mysql-workbench redis-server
+   apt-get install mysql-server redis-server
 ```
 ## PHP 
 ```bash
